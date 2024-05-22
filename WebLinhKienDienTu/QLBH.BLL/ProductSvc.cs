@@ -29,15 +29,15 @@ namespace QLBH.BLL
             productRep = new ProductRep();
         }
 
-        public SingleRsp CreateProduct(ProductReq productReq)
+        public SingleRsp CreateProduct(ProductReq _productReq)
         {
             var res = new SingleRsp();
             Sanpham sanpham = new Sanpham();
-            sanpham.MaSp = productReq.MaSp;
-            sanpham.TenSp = productReq.TenSp;
-            sanpham.AnhSp = productReq.AnhSp;
-            sanpham.Giaban = productReq.Giaban;
-            sanpham.Soluongton = productReq.Soluongton;
+            sanpham.MaSp = _productReq.MaSp;
+            sanpham.TenSp = _productReq.TenSp;
+            sanpham.AnhSp = _productReq.AnhSp;
+            sanpham.Giaban = _productReq.Giaban;
+            sanpham.Soluongton = _productReq.Soluongton;
             res = productRep.CreateProduct(sanpham);
             return res;
         }
@@ -57,6 +57,46 @@ namespace QLBH.BLL
             }
             return res;
         }
+
+
+        public SingleRsp UpdateProduct(int Id, ProductReq sanPhamReq)
+        {
+            var res = new SingleRsp();
+            var existingCustomer = productRep.Read(Id);
+            if (existingCustomer == null)
+            {
+                res.SetError("Customer not found.");
+                return res;
+            }
+            Sanpham sanPham = new Sanpham();
+            sanPham.TenSp = sanPhamReq.TenSp;
+            sanPham.Giaban = sanPhamReq.Giaban;
+            sanPham.Soluongton = sanPhamReq.Soluongton;
+            sanPham.AnhSp = sanPhamReq.AnhSp;
+            return res = productRep.UpdateProduct(sanPham);
+        }
+
+        public SingleRsp SearchProduct(SearchProductReq search)
+        {
+            var res = new SingleRsp();
+            //lay dssp theo keyword
+            var sanPhams = productRep.SearchProduct(search.Keyword);
+
+            //xu ly phan trang
+            int pCount,totalPages, offset;
+            offset = search.Size * (search.Page - 1);
+            pCount = sanPhams.Count;
+            totalPages = (pCount % search.Size) == 0? pCount / search.Size : 1 + (pCount / search.Size);
+            var p = new
+            {
+                Data = sanPhams.Skip(offset).Take(search.Size).ToList(),
+                Page = search.Page,
+                Size = search.Size
+            };
+            res.Data = p;
+            return res;
+        }
+
 
     }
 }
