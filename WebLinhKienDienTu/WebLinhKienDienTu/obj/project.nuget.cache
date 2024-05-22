@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uDuIGNeBgDFj6OVVXB5sJwjBuQpG7xC9wUlyY5zxNg4vDzK4FJCag7Dn5WpiR30XkMvcwulyvW/lDq+ThugZOg==",
+  "dgSpecHash": "GkR+Xk8Ohq6oDEZznO7B41lpefUZJ6aHpCTOLxkh3B9i/bdmA7bt2j0peGL3CZPE1jvAvOIG9YKecuFsJRdRmA==",
   "success": true,
-  "projectFilePath": "F:\\LTCSDL\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu15.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

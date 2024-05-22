@@ -1,4 +1,4 @@
-namespace WebLinhKienDienTu
+namespace WebLinhKienDienTu15
 {
     public class WeatherForecast
     {

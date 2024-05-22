@@ -8,18 +8,20 @@ namespace WebLinhKienDienTu15.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class ProductController : ControllerBase
     {
-        private CategorySvc categorySvc;
-        public CategoryController()
+        private ProductSvc productSvc;
+
+        public ProductController()
         {
-            categorySvc = new CategorySvc();
+            productSvc = new ProductSvc();
         }
-        [HttpPost("get-by-id")]
-        public IActionResult GetCategoryByID([FromBody] SimpleReq simpleReq)
+
+        [HttpPost("Create-Product")]
+        public IActionResult CreateProduct([FromBody] ProductReq productReq)
         {
             var res = new SingleRsp();
-            res = categorySvc.Read(simpleReq.Id);
+            res = productSvc.CreateProduct(productReq);
             return Ok(res);
         }
     }

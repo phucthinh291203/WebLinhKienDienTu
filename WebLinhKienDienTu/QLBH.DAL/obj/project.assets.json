@@ -2034,11 +2034,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\LTCSDL\\WebLinhKienDienTu\\QLBH.DAL\\QLBH.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\QLBH.DAL.csproj",
       "projectName": "QLBH.DAL",
-      "projectPath": "F:\\LTCSDL\\WebLinhKienDienTu\\QLBH.DAL\\QLBH.DAL.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\QLBH.DAL.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "F:\\LTCSDL\\WebLinhKienDienTu\\QLBH.DAL\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2055,8 +2055,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\LTCSDL\\WebLinhKienDienTu\\QLBH.common\\QLBH.common.csproj": {
-              "projectPath": "F:\\LTCSDL\\WebLinhKienDienTu\\QLBH.common\\QLBH.common.csproj"
+            "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\QLBH.common.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\QLBH.common.csproj"
             }
           }
         }

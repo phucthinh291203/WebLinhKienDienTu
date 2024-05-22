@@ -19,5 +19,12 @@ namespace QLBH.DAL
             var res = All.FirstOrDefault(c => c.MaLoaiSp == id);
             return res;
         }
+
+        public int Remove(int id)
+        {
+            var m = base.All.First(i => i.MaLoaiSp == id);
+            m = base.Delete(m);
+            return m.MaLoaiSp;
+        }
     }
 }

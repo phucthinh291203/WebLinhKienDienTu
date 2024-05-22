@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FYLkhDTlJkXczSyjrkLkecUXbAWjCQGDqKrduaNPtzz68TPqauA4y8BMI8rrSRkTU0A+RC6weKQ6g3wzEKSpUg==",
+  "dgSpecHash": "LuiGGhtMekSmBM8jXhh4U1GBwZlxLGBwsrPJqjBf/FFaDX+sUBcquxgdRZ8T4lxy8giIOA+BpbY7VC2co1lCng==",
   "success": true,
-  "projectFilePath": "F:\\LTCSDL\\WebLinhKienDienTu\\QLBH.DAL\\QLBH.DAL.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\QLBH.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

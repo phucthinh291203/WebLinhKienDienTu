@@ -2013,11 +2013,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\LTCSDL\\WebLinhKienDienTu\\QLBH.common\\QLBH.common.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\QLBH.common.csproj",
       "projectName": "QLBH.common",
-      "projectPath": "F:\\LTCSDL\\WebLinhKienDienTu\\QLBH.common\\QLBH.common.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\QLBH.common.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "F:\\LTCSDL\\WebLinhKienDienTu\\QLBH.common\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
