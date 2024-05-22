@@ -1,0 +1,17 @@
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\bin\Debug\net6.0\QLBH.DAL.deps.json
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\bin\Debug\net6.0\QLBH.DAL.runtimeconfig.json
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\bin\Debug\net6.0\QLBH.DAL.dll
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\bin\Debug\net6.0\QLBH.DAL.pdb
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\bin\Debug\net6.0\QLBH.common.dll
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\bin\Debug\net6.0\QLBH.common.pdb
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\QLBH.DAL.csproj.AssemblyReference.cache
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\QLBH.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\QLBH.DAL.AssemblyInfoInputs.cache
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\QLBH.DAL.AssemblyInfo.cs
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\QLBH.DAL.csproj.CoreCompileInputs.cache
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\QLBH.DAL.csproj.Up2Date
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\QLBH.DAL.dll
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\refint\QLBH.DAL.dll
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\QLBH.DAL.pdb
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\QLBH.DAL.genruntimeconfig.cache
+F:\LTCSDL\WebLinhKienDienTu\QLBH.DAL\obj\Debug\net6.0\ref\QLBH.DAL.dll

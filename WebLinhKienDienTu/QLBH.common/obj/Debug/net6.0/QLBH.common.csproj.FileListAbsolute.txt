@@ -1,0 +1,14 @@
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\bin\Debug\net6.0\QLBH.common.deps.json
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\bin\Debug\net6.0\QLBH.common.runtimeconfig.json
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\bin\Debug\net6.0\QLBH.common.dll
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\bin\Debug\net6.0\QLBH.common.pdb
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\QLBH.common.csproj.AssemblyReference.cache
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\QLBH.common.GeneratedMSBuildEditorConfig.editorconfig
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\QLBH.common.AssemblyInfoInputs.cache
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\QLBH.common.AssemblyInfo.cs
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\QLBH.common.csproj.CoreCompileInputs.cache
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\QLBH.common.dll
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\refint\QLBH.common.dll
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\QLBH.common.pdb
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\QLBH.common.genruntimeconfig.cache
+F:\LTCSDL\WebLinhKienDienTu\QLBH.common\obj\Debug\net6.0\ref\QLBH.common.dll
