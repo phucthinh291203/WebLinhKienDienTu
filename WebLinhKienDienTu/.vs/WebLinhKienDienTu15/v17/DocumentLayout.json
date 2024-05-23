@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BA8B8DA5-B5A5-4671-8DE8-10F3ECC94986}|WebLinhKienDienTu\\WebLinhKienDienTu15.csproj|c:\\users\\pc\\desktop\\weblinhkiendientu\\weblinhkiendientu\\weblinhkiendientu\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA8B8DA5-B5A5-4671-8DE8-10F3ECC94986}|WebLinhKienDienTu\\WebLinhKienDienTu15.csproj|solutionrelative:weblinhkiendientu\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA8B8DA5-B5A5-4671-8DE8-10F3ECC94986}|WebLinhKienDienTu\\WebLinhKienDienTu15.csproj|c:\\users\\pc\\desktop\\weblinhkiendientu\\weblinhkiendientu\\weblinhkiendientu\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA8B8DA5-B5A5-4671-8DE8-10F3ECC94986}|WebLinhKienDienTu\\WebLinhKienDienTu15.csproj|solutionrelative:weblinhkiendientu\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{97335BBB-9C19-4531-B916-4288A234DD5E}|QLBH.BLL\\QLBH.BLL.csproj|c:\\users\\pc\\desktop\\weblinhkiendientu\\weblinhkiendientu\\qlbh.bll\\usersvc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97335BBB-9C19-4531-B916-4288A234DD5E}|QLBH.BLL\\QLBH.BLL.csproj|solutionrelative:qlbh.bll\\usersvc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -137,10 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BA8B8DA5-B5A5-4671-8DE8-10F3ECC94986}|WebLinhKienDienTu\\WebLinhKienDienTu15.csproj|c:\\users\\pc\\desktop\\weblinhkiendientu\\weblinhkiendientu\\weblinhkiendientu\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA8B8DA5-B5A5-4671-8DE8-10F3ECC94986}|WebLinhKienDienTu\\WebLinhKienDienTu15.csproj|solutionrelative:weblinhkiendientu\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA8B8DA5-B5A5-4671-8DE8-10F3ECC94986}|WebLinhKienDienTu\\WebLinhKienDienTu15.csproj|c:\\users\\pc\\desktop\\weblinhkiendientu\\weblinhkiendientu\\weblinhkiendientu\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA8B8DA5-B5A5-4671-8DE8-10F3ECC94986}|WebLinhKienDienTu\\WebLinhKienDienTu15.csproj|solutionrelative:weblinhkiendientu\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -150,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,20 +162,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginReq.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\LoginReq.cs",
-              "RelativeDocumentMoniker": "QLBH.common\\Req\\LoginReq.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\LoginReq.cs",
-              "RelativeToolTip": "QLBH.common\\Req\\LoginReq.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAUAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebLinhKienDienTu\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebLinhKienDienTu\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGcAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T14:59:02.32Z",
+              "WhenOpened": "2024-05-23T03:21:56.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserSvc.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.BLL\\UserSvc.cs",
               "RelativeDocumentMoniker": "QLBH.BLL\\UserSvc.cs",
@@ -184,20 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserRep.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\UserRep.cs",
-              "RelativeDocumentMoniker": "QLBH.DAL\\UserRep.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\UserRep.cs",
-              "RelativeToolTip": "QLBH.DAL\\UserRep.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAUwBUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T14:45:34.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Khachhang.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\Models\\Khachhang.cs",
               "RelativeDocumentMoniker": "QLBH.DAL\\Models\\Khachhang.cs",
@@ -210,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CategoryRep.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\CategoryRep.cs",
               "RelativeDocumentMoniker": "QLBH.DAL\\CategoryRep.cs",
@@ -223,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UserReq.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\UserReq.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Req\\UserReq.cs",
@@ -236,7 +227,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\StartUp.cs",
+              "RelativeDocumentMoniker": "WebLinhKienDienTu\\StartUp.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\StartUp.cs",
+              "RelativeToolTip": "WebLinhKienDienTu\\StartUp.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwGYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T07:53:33.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "UserRep.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\UserRep.cs",
+              "RelativeDocumentMoniker": "QLBH.DAL\\UserRep.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\UserRep.cs",
+              "RelativeToolTip": "QLBH.DAL\\UserRep.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAUwBUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T14:45:34.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginReq.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\LoginReq.cs",
+              "RelativeDocumentMoniker": "QLBH.common\\Req\\LoginReq.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\LoginReq.cs",
+              "RelativeToolTip": "QLBH.common\\Req\\LoginReq.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T14:59:02.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "QLBH.DAL\\Models\\Admin.cs",
@@ -249,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ProductRep.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\ProductRep.cs",
               "RelativeDocumentMoniker": "QLBH.DAL\\ProductRep.cs",
@@ -262,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Dondathang.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\Models\\Dondathang.cs",
               "RelativeDocumentMoniker": "QLBH.DAL\\Models\\Dondathang.cs",
@@ -275,20 +305,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ProductSvc.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.BLL\\ProductSvc.cs",
               "RelativeDocumentMoniker": "QLBH.BLL\\ProductSvc.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.BLL\\ProductSvc.cs",
               "RelativeToolTip": "QLBH.BLL\\ProductSvc.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAEsAAAA7AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwEsAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T08:39:58.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "DanhGium.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\Models\\DanhGium.cs",
               "RelativeDocumentMoniker": "QLBH.DAL\\Models\\DanhGium.cs",
@@ -301,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Chitietdonthang.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\Models\\Chitietdonthang.cs",
               "RelativeDocumentMoniker": "QLBH.DAL\\Models\\Chitietdonthang.cs",
@@ -314,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "SimpleReq.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\SimpleReq.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Req\\SimpleReq.cs",
@@ -327,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "SearchProductReq.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\SearchProductReq.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Req\\SearchProductReq.cs",
@@ -340,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "SearchCateByNameReq.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\SearchCateByNameReq.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Req\\SearchCateByNameReq.cs",
@@ -353,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "CategoryReq.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\CategoryReq.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Req\\CategoryReq.cs",
@@ -366,20 +396,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "WebLinhKienDienTu\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "WebLinhKienDienTu\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEgAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwEgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T13:43:08.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "CategorySvc.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.BLL\\CategorySvc.cs",
               "RelativeDocumentMoniker": "QLBH.BLL\\CategorySvc.cs",
@@ -392,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ProductReq.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\ProductReq.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Req\\ProductReq.cs",
@@ -405,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "WebLinhKienDienTu\\Controllers\\ProductController.cs",
@@ -418,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\Program.cs",
               "RelativeDocumentMoniker": "WebLinhKienDienTu\\Program.cs",
@@ -431,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "WebLinhKienDienTu15.csproj",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu15.csproj",
               "RelativeDocumentMoniker": "WebLinhKienDienTu\\WebLinhKienDienTu15.csproj",
@@ -439,46 +469,37 @@
               "RelativeToolTip": "WebLinhKienDienTu\\WebLinhKienDienTu15.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-22T09:13:21.932Z"
+              "WhenOpened": "2024-05-22T09:13:21.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "WebLinhKienDienTu\\Controllers\\WeatherForecastController.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "WebLinhKienDienTu\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAIBJwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T07:52:32.355Z"
+              "WhenOpened": "2024-05-22T07:52:32.355Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "StartUp.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\StartUp.cs",
-              "RelativeDocumentMoniker": "WebLinhKienDienTu\\StartUp.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\StartUp.cs",
-              "RelativeToolTip": "WebLinhKienDienTu\\StartUp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T07:53:33.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "WebLinhKienDienTu15",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu15.csproj",
               "RelativeDocumentMoniker": "WebLinhKienDienTu\\WebLinhKienDienTu15.csproj",
               "ToolTip": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu\\WebLinhKienDienTu15.csproj",
               "RelativeToolTip": "WebLinhKienDienTu\\WebLinhKienDienTu15.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-22T09:16:28.428Z"
+              "WhenOpened": "2024-05-22T09:16:28.428Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "SingleRsp.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Rsp\\SingleRsp.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Rsp\\SingleRsp.cs",
@@ -486,11 +507,12 @@
               "RelativeToolTip": "QLBH.common\\Rsp\\SingleRsp.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAwwDMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:56:36.52Z"
+              "WhenOpened": "2024-05-22T06:56:36.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "MultipleRsp.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Rsp\\MultipleRsp.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Rsp\\MultipleRsp.cs",
@@ -498,11 +520,12 @@
               "RelativeToolTip": "QLBH.common\\Rsp\\MultipleRsp.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAIwHYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:57:41.073Z"
+              "WhenOpened": "2024-05-22T06:57:41.073Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "BaseReq.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\BaseReq.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Req\\BaseReq.cs",
@@ -510,11 +533,12 @@
               "RelativeToolTip": "QLBH.common\\Req\\BaseReq.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAgwDwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T07:01:42.195Z"
+              "WhenOpened": "2024-05-22T07:01:42.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "GenericSvc.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\BLL\\GenericSvc.cs",
               "RelativeDocumentMoniker": "QLBH.common\\BLL\\GenericSvc.cs",
@@ -522,11 +546,12 @@
               "RelativeToolTip": "QLBH.common\\BLL\\GenericSvc.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwNYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T07:05:25.282Z"
+              "WhenOpened": "2024-05-22T07:05:25.282Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "IGenericSvc.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\BLL\\IGenericSvc.cs",
               "RelativeDocumentMoniker": "QLBH.common\\BLL\\IGenericSvc.cs",
@@ -534,11 +559,12 @@
               "RelativeToolTip": "QLBH.common\\BLL\\IGenericSvc.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAG0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T07:04:15.201Z"
+              "WhenOpened": "2024-05-22T07:04:15.201Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "BaseModel.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Req\\BaseModel.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Req\\BaseModel.cs",
@@ -546,11 +572,12 @@
               "RelativeToolTip": "QLBH.common\\Req\\BaseModel.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwDgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T07:00:21.16Z"
+              "WhenOpened": "2024-05-22T07:00:21.16Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "BaseRsp.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\Rsp\\BaseRsp.cs",
               "RelativeDocumentMoniker": "QLBH.common\\Rsp\\BaseRsp.cs",
@@ -558,11 +585,12 @@
               "RelativeToolTip": "QLBH.common\\Rsp\\BaseRsp.cs",
               "ViewState": "AQIAAFkAAAAAAAAAAAAowKYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:54:42.631Z"
+              "WhenOpened": "2024-05-22T06:54:42.631Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "GenericRep.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\DAL\\GenericRep.cs",
               "RelativeDocumentMoniker": "QLBH.common\\DAL\\GenericRep.cs",
@@ -570,11 +598,12 @@
               "RelativeToolTip": "QLBH.common\\DAL\\GenericRep.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAIQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:50:55.216Z"
+              "WhenOpened": "2024-05-22T06:50:55.216Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "IGenericRep.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.common\\DAL\\IGenericRep.cs",
               "RelativeDocumentMoniker": "QLBH.common\\DAL\\IGenericRep.cs",
@@ -582,11 +611,12 @@
               "RelativeToolTip": "QLBH.common\\DAL\\IGenericRep.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:48:08.877Z"
+              "WhenOpened": "2024-05-22T06:48:08.877Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "WebDienTuContext.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\WebLinhKienDienTu\\WebLinhKienDienTu\\QLBH.DAL\\Models\\WebDienTuContext.cs",
               "RelativeDocumentMoniker": "QLBH.DAL\\Models\\WebDienTuContext.cs",
@@ -594,7 +624,8 @@
               "RelativeToolTip": "QLBH.DAL\\Models\\WebDienTuContext.cs",
               "ViewState": "AQIAAFwAAAAANDMzMzMfwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:09:30.39Z"
+              "WhenOpened": "2024-05-22T06:09:30.39Z",
+              "EditorCaption": ""
             }
           ]
         },
