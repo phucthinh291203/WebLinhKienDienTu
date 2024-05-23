@@ -8,16 +8,18 @@ namespace QLBH.BLL
 {
     public class UserSvc : GenericSvc<UserRep, Khachhang>
     {
-        private readonly UserRep userRep;
+        private UserRep userRep;
 
         public UserSvc()
         {
             userRep = new UserRep();
         }
 
-        public void DeleteUser(int id)
+        public SingleRsp Remove(int id)
         {
-            userRep.Delete(id);
+            var res = new SingleRsp();
+            res.Data = _rep.Remove(id);
+            return res;
         }
         public void DeleteUserByUserName(string username)
         {

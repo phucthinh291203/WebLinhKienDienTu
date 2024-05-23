@@ -18,9 +18,9 @@ namespace WebLinhKienDienTu15.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly WebDienTuContext _context;
-        private readonly JwtSettings _jwtSettings;
-        private readonly UserSvc _userSvc;
+        private WebDienTuContext _context;
+        private JwtSettings _jwtSettings;
+        private UserSvc _userSvc;
 
         public UserController(WebDienTuContext context, IOptionsMonitor<JwtSettings> optionsMonitor, UserSvc userSvc)
         {
@@ -40,9 +40,9 @@ namespace WebLinhKienDienTu15.Controllers
             }
 
             var user = (Khachhang)res.Data;
-            var token = GenerateToken(user);
+            //var token = GenerateToken(user);
             var response = new SingleRsp();
-            response.Data = token;
+            
             response.SetMessage("Authenticate success");
             return Ok(response);
         }
@@ -59,12 +59,12 @@ namespace WebLinhKienDienTu15.Controllers
             res.Data = model;
             return Ok(res);
         }
-        [HttpGet("GetAllUser")]
-        public IActionResult GetAllUsersExceptAdmin()
-        {
-            var res = _userSvc.GetAllUsersExceptAdmin();
-            return Ok(res);
-        }
+        //[HttpGet("GetAllUser")]
+        //public IActionResult GetAllUsersExceptAdmin()
+        //{
+        //    var res = _userSvc.GetAllUsersExceptAdmin();
+        //    return Ok(res);
+        //}
         [HttpGet("SeachByusername")]
         public IActionResult GetUserByUsername(string username)
         {
@@ -101,17 +101,17 @@ namespace WebLinhKienDienTu15.Controllers
             res.Data = userReq;
             return Ok(res);
         }
-        [HttpPut("UpdateUserRoleByUsername")]
-        public IActionResult UpdateUserRoleByUsername(string username, [FromBody] string role)
-        {
-            if (string.IsNullOrEmpty(role))
-            {
-                return BadRequest("Invalid role.");
-            }
+        //[HttpPut("UpdateUserRoleByUsername")]
+        //public IActionResult UpdateUserRoleByUsername(string username, [FromBody] string role)
+        //{
+        //    if (string.IsNullOrEmpty(role))
+        //    {
+        //        return BadRequest("Invalid role.");
+        //    }
 
-            var res = _userSvc.UpdateUserRoleByUserName(username, role);
-            return Ok(res);
-        }
+        //    var res = _userSvc.UpdateUserRoleByUserName(username, role);
+        //    return Ok(res);
+        //}
 
 
         [HttpDelete("DeleteUserById/{id}")]
@@ -119,7 +119,7 @@ namespace WebLinhKienDienTu15.Controllers
         {
             try
             {
-                _userSvc.DeleteUser(id);
+                _userSvc.Delete(id);
                 return Ok();
             }
             catch (Exception ex)
@@ -140,28 +140,28 @@ namespace WebLinhKienDienTu15.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-        private string GenerateToken(Khachhang user)
-        {
-            var jwtTokenHandler = new JwtSecurityTokenHandler();
-            var secretKeyBytes = Encoding.UTF8.GetBytes(_jwtSettings.securitykey);
+        //private string GenerateToken(Khachhang user)
+        //{
+        //    var jwtTokenHandler = new JwtSecurityTokenHandler();
+        //    var secretKeyBytes = Encoding.UTF8.GetBytes(_jwtSettings.securitykey);
 
-            var tokenDescription = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new[]
-                {
+        //    var tokenDescription = new SecurityTokenDescriptor
+        //    {
+        //        Subject = new ClaimsIdentity(new[]
+        //        {
 
-                    new Claim("UserName", user.Taikhoan),
-                    new Claim("Id", user.MaKh.ToString()),
-                    new Claim("Role", user.Role),
-                    new Claim("TokenId", Guid.NewGuid().ToString())
-                }),
-                Expires = DateTime.UtcNow.AddMinutes(10),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(secretKeyBytes), SecurityAlgorithms.HmacSha512Signature)
-            };
+        //            new Claim("UserName", user.Taikhoan),
+        //            new Claim("Id", user.MaKh.ToString())
+        //            /*new Claim("Role", user.Role)*/,
+        //            new Claim("TokenId", Guid.NewGuid().ToString())
+        //        }),
+        //        Expires = DateTime.UtcNow.AddMinutes(10),
+        //        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(secretKeyBytes), SecurityAlgorithms.HmacSha512Signature)
+        //    };
 
-            var token = jwtTokenHandler.CreateToken(tokenDescription);
-            return jwtTokenHandler.WriteToken(token);
-        }
+        //    var token = jwtTokenHandler.CreateToken(tokenDescription);
+        //    return jwtTokenHandler.WriteToken(token);
+        //}
     }
 
     

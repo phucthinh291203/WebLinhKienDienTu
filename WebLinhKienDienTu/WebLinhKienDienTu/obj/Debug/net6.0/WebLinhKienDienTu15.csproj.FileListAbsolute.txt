@@ -70,3 +70,6 @@ C:\Users\PC\Desktop\WebLinhKienDienTu\WebLinhKienDienTu\WebLinhKienDienTu\obj\De
 C:\Users\PC\Desktop\WebLinhKienDienTu\WebLinhKienDienTu\WebLinhKienDienTu\obj\Debug\net6.0\WebLinhKienDienTu15.pdb
 C:\Users\PC\Desktop\WebLinhKienDienTu\WebLinhKienDienTu\WebLinhKienDienTu\obj\Debug\net6.0\WebLinhKienDienTu15.genruntimeconfig.cache
 C:\Users\PC\Desktop\WebLinhKienDienTu\WebLinhKienDienTu\WebLinhKienDienTu\obj\Debug\net6.0\ref\WebLinhKienDienTu15.dll
+C:\Users\PC\Desktop\WebLinhKienDienTu\WebLinhKienDienTu\WebLinhKienDienTu\bin\Debug\net6.0\jose-jwt.dll
+C:\Users\PC\Desktop\WebLinhKienDienTu\WebLinhKienDienTu\WebLinhKienDienTu\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\PC\Desktop\WebLinhKienDienTu\WebLinhKienDienTu\WebLinhKienDienTu\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

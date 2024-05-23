@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using QLBH.common.DAL;
 using QLBH.common.Rsp;
 using QLBH.DAL.Models;
@@ -18,7 +19,12 @@ namespace QLBH.DAL
             var res = All.FirstOrDefault(u => u.MaKh == id);
             return res;
         }
-
+        public int Remove(int id)
+        {
+            var m = base.All.First(i => i.MaKh == id);
+            m = base.Delete(m);
+            return m.MaKh;
+        }
         public Khachhang Read(string username)
         {
             var res = All.FirstOrDefault(u => u.Taikhoan == username);
@@ -47,16 +53,6 @@ namespace QLBH.DAL
                 res.SetError(ex.StackTrace);
             }
             return res;
-        }
-
-        public void Delete(int id)
-        {
-            var user = _context.Khachhangs.Find(id);
-            if (user != null)
-            {
-                _context.Khachhangs.Remove(user);
-                _context.SaveChanges();
-            }
         }
         public void DeleteByUserName(string username)
         {
