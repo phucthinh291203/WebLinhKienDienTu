@@ -18,11 +18,11 @@ namespace WebLinhKienDienTu15.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private WebDienTuContext _context;
+        private WebDienTu15Context _context;
         private JwtSettings _jwtSettings;
         private UserSvc _userSvc;
 
-        public UserController(WebDienTuContext context, IOptionsMonitor<JwtSettings> optionsMonitor, UserSvc userSvc)
+        public UserController(WebDienTu15Context context, IOptionsMonitor<JwtSettings> optionsMonitor, UserSvc userSvc)
         {
             _context = context;
             _jwtSettings = optionsMonitor.CurrentValue;
@@ -39,10 +39,10 @@ namespace WebLinhKienDienTu15.Controllers
                 return Ok(res);
             }
 
-            var user = (Khachhang)res.Data;
+            var user = (TaiKhoan)res.Data;
             //var token = GenerateToken(user);
             var response = new SingleRsp();
-            
+
             response.SetMessage("Authenticate success");
             return Ok(response);
         }
@@ -164,5 +164,5 @@ namespace WebLinhKienDienTu15.Controllers
         //}
     }
 
-    
+
 }

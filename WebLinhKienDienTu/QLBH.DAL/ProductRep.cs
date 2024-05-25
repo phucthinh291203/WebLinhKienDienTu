@@ -4,40 +4,40 @@ using QLBH.DAL.Models;
 
 namespace QLBH.DAL
 {
-    public class ProductRep : GenericRep<WebDienTuContext, Sanpham>
+    public class ProductRep : GenericRep<WebDienTu15Context, SanPham>
     {
         public ProductRep()
         {
 
         }
         #region -- override --
-        public override Sanpham Read(int id)
+        public override SanPham Read(int id)
         {
-            var res = All.FirstOrDefault(p => p.MaSp == id);
+            var res = All.FirstOrDefault(p => p.Id == id);
             return res;
         }
 
         public int Remove(int id)
         {
-            var m = base.All.First(i => i.MaSp == id);
+            var m = base.All.First(i => i.Id == id);
             m = base.Delete(m);
-            return m.MaSp;
+            return m.Id;
         }
 
         #endregion
 
 
         #region -- method --
-        public SingleRsp CreateProduct(Sanpham _sanpham)
+        public SingleRsp CreateProduct(SanPham _sanpham)
         {
             var res = new SingleRsp();
-            using (var context = new WebDienTuContext())
+            using (var context = new WebDienTu15Context())
             {
                 using (var tran = context.Database.BeginTransaction())
                 {
                     try
                     {
-                        var p = context.Sanphams.Add(_sanpham);
+                        var p = context.SanPhams.Add(_sanpham);
                         context.SaveChanges();
                         tran.Commit();
                     }
@@ -52,23 +52,23 @@ namespace QLBH.DAL
         }
 
 
-        public List<Sanpham> SearchProduct(string keyword)
+        public List<SanPham> SearchProduct(string keyword)
         {
-            return All.Where(x => x.TenSp.Contains(keyword)).ToList();
+            return All.Where(x => x.Ten.Contains(keyword)).ToList();
 
         }
 
-        public SingleRsp UpdateProduct(Sanpham sanPham)
+        public SingleRsp UpdateProduct(SanPham sanPham)
         {
             var res = new SingleRsp();
-            using (var context = new WebDienTuContext())
+            using (var context = new WebDienTu15Context())
             {
 
                 using (var tran = context.Database.BeginTransaction())
                 {
                     try
                     {
-                        var p = context.Sanphams.Update(sanPham);
+                        var p = context.SanPhams.Update(sanPham);
                         context.SaveChanges();
                         tran.Commit();
                     }

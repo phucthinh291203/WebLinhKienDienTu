@@ -6,7 +6,7 @@ using QLBH.DAL.Models;
 
 namespace QLBH.BLL
 {
-    public class UserSvc : GenericSvc<UserRep, Khachhang>
+    public class UserSvc : GenericSvc<UserRep, TaiKhoan>
     {
         private UserRep userRep;
 
@@ -26,11 +26,11 @@ namespace QLBH.BLL
             userRep.DeleteByUserName(username);
         }
 
-        public Khachhang GetUserById(int id)
+        public TaiKhoan GetUserById(int id)
         {
             return userRep.GetById(id);
         }
-        public Khachhang GetUserByUserName(string username)
+        public TaiKhoan GetUserByUserName(string username)
         {
             return userRep.GetByUserName(username);
         }
@@ -38,13 +38,13 @@ namespace QLBH.BLL
         public SingleRsp CreateUser(UserReq userReq)
         {
             var res = new SingleRsp();
-            if (string.IsNullOrWhiteSpace(userReq.Taikhoan))
+            if (string.IsNullOrWhiteSpace(userReq.UserName))
             {
                 res.SetError("Username cannot be empty or whitespace.");
                 return res;
             }
 
-            var existingUser = userRep.GetByUserName(userReq.Taikhoan);
+            var existingUser = userRep.GetByUserName(userReq.UserName);
 
             if (existingUser != null)
             {
@@ -52,14 +52,12 @@ namespace QLBH.BLL
                 return res;
             }
 
-            var user = new Khachhang
+            var user = new TaiKhoan
             {
-                Taikhoan = userReq.Taikhoan,
-                Matkhau = userReq.Matkhau,
-                HoTen = userReq.HoTen,
-                Email = userReq.Email,
-                DienthoaiKh = userReq.DienthoaiKh,
-                DiachiKh = userReq.DiachiKh,
+                UserName = userReq.UserName,
+                Pass = userReq.Pass,
+                Ten = userReq.Ten,
+                IdRole = 2
 
             };
 
@@ -75,26 +73,24 @@ namespace QLBH.BLL
                 res.SetError("User not found.");
                 return res;
             }
-            if (!string.IsNullOrEmpty(userReq.Taikhoan) && string.IsNullOrWhiteSpace(userReq.Taikhoan))
+            if (!string.IsNullOrEmpty(userReq.UserName) && string.IsNullOrWhiteSpace(userReq.UserName))
             {
                 res.SetError("Tai khoan khong duoc de khoang trong");
                 return res;
             }
-            if (userRep.ExistsUserName(userReq.Taikhoan, id))
+            if (userRep.ExistsUserName(userReq.UserName, id))
             {
                 res.SetError("Tai khoan da ton tai");
                 return res;
             }
 
-            existingUser.Taikhoan = userReq.Taikhoan ?? existingUser.Taikhoan;
-            if (!string.IsNullOrEmpty(userReq.Matkhau))
+            existingUser.UserName = userReq.UserName ?? existingUser.UserName;
+            if (!string.IsNullOrEmpty(userReq.Pass))
             {
-                existingUser.Matkhau = userReq.Matkhau;
+                existingUser.Pass = userReq.Pass;
             }
-            existingUser.HoTen = userReq.HoTen ?? existingUser.HoTen;
-            existingUser.Email = userReq.Email ?? existingUser.Email;
-            existingUser.DienthoaiKh = userReq.DienthoaiKh ?? existingUser.DienthoaiKh;
-            existingUser.DiachiKh = userReq.DiachiKh ?? existingUser.DiachiKh;
+            existingUser.Ten = userReq.Ten ?? existingUser.Ten;
+
 
             return userRep.UpdateUser(existingUser);
         }
@@ -109,28 +105,41 @@ namespace QLBH.BLL
                 res.SetError("User not found.");
                 return res;
             }
-            if (!string.IsNullOrEmpty(userReq.Taikhoan) && string.IsNullOrWhiteSpace(userReq.Taikhoan)) // Kiem tra khoang trang
+            if (!string.IsNullOrEmpty(userReq.UserName) && string.IsNullOrWhiteSpace(userReq.UserName)) // Kiem tra khoang trang
             {
                 res.SetError("Username cannot be empty or whitespace.");
                 return res;
             }
 
-            if (userRep.ExistsUserName(userReq.Taikhoan, existingUser.MaKh))
+            if (userRep.ExistsUserName(userReq.UserName, existingUser.Id))
             {
                 res.SetError("Username already exists.");
                 return res;
             }
 
-            existingUser.Taikhoan = userReq.Taikhoan ?? existingUser.Taikhoan;
-            if (!string.IsNullOrEmpty(userReq.Matkhau))
+            existingUser.UserName = userReq.UserName ?? existingUser.UserName;
+            if (!string.IsNullOrEmpty(userReq.Pass))
             {
-                existingUser.Matkhau = userReq.Matkhau;
+                existingUser.Pass = userReq.Pass;
             }
-            existingUser.HoTen = userReq.HoTen ?? existingUser.HoTen;
-            existingUser.Email = userReq.Email ?? existingUser.Email;
-            existingUser.DienthoaiKh = userReq.DienthoaiKh ?? existingUser.DienthoaiKh;
-            existingUser.DiachiKh = userReq.DiachiKh ?? existingUser.DiachiKh;
+            existingUser.Ten = userReq.Ten ?? existingUser.Ten;
 
+
+            return userRep.UpdateUser(existingUser);
+        }
+
+
+        public SingleRsp UpdateUserRoleByUserName(string username, int role)
+        {
+            var res = new SingleRsp();
+            var existingUser = userRep.GetByUserName(username);
+            if (existingUser == null)
+            {
+                res.SetError("User not found.");
+                return res;
+            }
+
+            existingUser.IdRole = role;
             return userRep.UpdateUser(existingUser);
         }
 
@@ -139,7 +148,7 @@ namespace QLBH.BLL
             var res = new SingleRsp();
             var user = userRep.Read(loginReq.TaiKhoan);
 
-            if (user == null || user.Matkhau != loginReq.MatKhau)
+            if (user == null || user.Pass != loginReq.MatKhau)
             {
                 res.SetError("Sai tai khoan hoac mat khau");
             }

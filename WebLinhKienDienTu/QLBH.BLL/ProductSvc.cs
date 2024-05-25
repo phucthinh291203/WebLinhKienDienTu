@@ -11,7 +11,7 @@ using QLBH.DAL.Models;
 
 namespace QLBH.BLL
 {
-    public class ProductSvc: GenericSvc<ProductRep, Sanpham>
+    public class ProductSvc : GenericSvc<ProductRep, SanPham>
     {
         private ProductRep productRep;
 
@@ -32,21 +32,21 @@ namespace QLBH.BLL
         public SingleRsp CreateProduct(ProductReq _productReq)
         {
             var res = new SingleRsp();
-            Sanpham sanpham = new Sanpham();
-            sanpham.MaSp = _productReq.MaSp;
-            sanpham.TenSp = _productReq.TenSp;
-            sanpham.AnhSp = _productReq.AnhSp;
-            sanpham.Giaban = _productReq.Giaban;
-            sanpham.Soluongton = _productReq.Soluongton;
+            SanPham sanpham = new SanPham();
+            sanpham.Id = _productReq.Id;
+            sanpham.Ten = _productReq.Ten;
+            sanpham.HinhAnh = _productReq.HinhAnh;
+            sanpham.GiaBan = _productReq.GiaBan;
+            sanpham.SoLuongTon = _productReq.SoLuongTon;
             res = productRep.CreateProduct(sanpham);
             return res;
         }
 
-        public override SingleRsp Update(Sanpham m)
+        public override SingleRsp Update(SanPham m)
         {
             var res = new SingleRsp();
-            var m1 = m.MaSp > 0 ? _rep.Read(m.MaSp) : _rep.Read(m.TenSp);
-            if(m1 == null)
+            var m1 = m.Id > 0 ? _rep.Read(m.Id) : _rep.Read(m.Ten);
+            if (m1 == null)
             {
                 res.SetError("EZ103", "No data.");
             }
@@ -59,7 +59,7 @@ namespace QLBH.BLL
         }
 
 
-        public SingleRsp UpdateProduct(int Id, ProductReq sanPhamReq)
+        public SingleRsp UpdateProduct(int Id, ProductReq _productReq)
         {
             var res = new SingleRsp();
             var existingCustomer = productRep.Read(Id);
@@ -68,12 +68,13 @@ namespace QLBH.BLL
                 res.SetError("Customer not found.");
                 return res;
             }
-            Sanpham sanPham = new Sanpham();
-            sanPham.TenSp = sanPhamReq.TenSp;
-            sanPham.Giaban = sanPhamReq.Giaban;
-            sanPham.Soluongton = sanPhamReq.Soluongton;
-            sanPham.AnhSp = sanPhamReq.AnhSp;
-            return res = productRep.UpdateProduct(sanPham);
+            SanPham sanpham = new SanPham();
+            sanpham.Id = _productReq.Id;
+            sanpham.Ten = _productReq.Ten;
+            sanpham.HinhAnh = _productReq.HinhAnh;
+            sanpham.GiaBan = _productReq.GiaBan;
+            sanpham.SoLuongTon = _productReq.SoLuongTon;
+            return res = productRep.UpdateProduct(sanpham);
         }
 
         public SingleRsp SearchProduct(SearchProductReq search)
@@ -83,10 +84,10 @@ namespace QLBH.BLL
             var sanPhams = productRep.SearchProduct(search.Keyword);
 
             //xu ly phan trang
-            int pCount,totalPages, offset;
+            int pCount, totalPages, offset;
             offset = search.Size * (search.Page - 1);
             pCount = sanPhams.Count;
-            totalPages = (pCount % search.Size) == 0? pCount / search.Size : 1 + (pCount / search.Size);
+            totalPages = (pCount % search.Size) == 0 ? pCount / search.Size : 1 + (pCount / search.Size);
             var p = new
             {
                 Data = sanPhams.Skip(offset).Take(search.Size).ToList(),

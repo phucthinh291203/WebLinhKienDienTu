@@ -11,7 +11,7 @@ using QLBH.DAL.Models;
 
 namespace QLBH.BLL
 {
-    public class CategorySvc:GenericSvc<CategoryRep,LoaiSp>
+    public class CategorySvc : GenericSvc<CategoryRep, LoaiSp>
     {
         private CategoryRep categoryRep;
         public CategorySvc()
@@ -31,7 +31,7 @@ namespace QLBH.BLL
         {
             var res = new SingleRsp();
 
-            var m1 = m.MaLoaiSp > 0 ? _rep.Read(m.MaLoaiSp) : _rep.Read(m.TenLoaiSp);
+            var m1 = m.Id > 0 ? _rep.Read(m.Id) : _rep.Read(m.Ten);
             if (m1 == null)
             {
                 res.SetError("EZ103", "No data.");
@@ -69,7 +69,7 @@ namespace QLBH.BLL
             var res = new SingleRsp();
 
             LoaiSp l = new LoaiSp();
-            l.TenLoaiSp = loaiSpReq.TenLoaiSp;
+            l.Ten = loaiSpReq.TenLoaiSp;
             res = categoryRep.CreateCategory(l);
             return res;
         }
@@ -84,7 +84,7 @@ namespace QLBH.BLL
                 return res;
             }
             LoaiSp l = new LoaiSp();
-            l.TenLoaiSp = loaiSpReq.TenLoaiSp;
+            l.Ten = loaiSpReq.TenLoaiSp;
             res = categoryRep.UpdateCategory(l);
             return res;
         }

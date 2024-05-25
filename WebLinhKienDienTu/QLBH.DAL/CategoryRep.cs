@@ -9,7 +9,7 @@ using QLBH.DAL.Models;
 
 namespace QLBH.DAL
 {
-    public class CategoryRep:GenericRep<WebDienTuContext,LoaiSp>
+    public class CategoryRep : GenericRep<WebDienTu15Context, LoaiSp>
     {
         public CategoryRep()
         {
@@ -17,26 +17,26 @@ namespace QLBH.DAL
 
         public override LoaiSp Read(int id)
         {
-            var res = All.FirstOrDefault(c => c.MaLoaiSp == id);
+            var res = All.FirstOrDefault(c => c.Id == id);
             return res;
         }
 
         public int Remove(int id)
         {
-            var m = base.All.First(i => i.MaLoaiSp == id);
+            var m = base.All.First(i => i.Id == id);
             m = base.Delete(m);
-            return m.MaLoaiSp;
+            return m.Id;
         }
 
         public List<LoaiSp> SearchCategory(string keyword)
         {
-            return All.Where(x => x.TenLoaiSp.Contains(keyword)).ToList();
+            return All.Where(x => x.Ten.Contains(keyword)).ToList();
         }
 
         public SingleRsp CreateCategory(LoaiSp loaiSanPham)
         {
             var res = new SingleRsp();
-            using (var context = new WebDienTuContext())
+            using (var context = new WebDienTu15Context())
             {
                 using (var tran = context.Database.BeginTransaction())
                 {
@@ -60,7 +60,7 @@ namespace QLBH.DAL
         public SingleRsp UpdateCategory(LoaiSp loaiSanPham)
         {
             var res = new SingleRsp();
-            using (var context = new WebDienTuContext())
+            using (var context = new WebDienTu15Context())
             {
 
                 using (var tran = context.Database.BeginTransaction())

@@ -37,7 +37,7 @@ namespace WebLinhKienDienTu15.Controllers
         [HttpDelete("Delete-Product")]
         public IActionResult DeleteProduct(int id)
         {
-            WebDienTuContext context = new WebDienTuContext();
+            WebDienTu15Context context = new WebDienTu15Context();
 
             var pr = productSvc.Read(id);
             if (pr.Data != null)
@@ -68,11 +68,11 @@ namespace WebLinhKienDienTu15.Controllers
             // Assuming sanPhamSvc.All returns IEnumerable<SanPham>
             var products = productSvc.All.Select(p => new
             {
-                MaSp = p.MaSp,
-                TenSp = p.TenSp,
-                Gia = p.Giaban,
-                TenLoaiSp = p.MaLoaiNavigation.TenLoaiSp,
-                Image = p.AnhSp // Assuming Image is a property representing the image
+                MaSp = p.Id,
+                TenSp = p.Ten,
+                Gia = p.GiaBan,
+                TenLoaiSp = p.IdLspNavigation.Ten,
+                Image = p.HinhAnh // Assuming Image is a property representing the image
             }).ToList();
 
             res.Data = products;

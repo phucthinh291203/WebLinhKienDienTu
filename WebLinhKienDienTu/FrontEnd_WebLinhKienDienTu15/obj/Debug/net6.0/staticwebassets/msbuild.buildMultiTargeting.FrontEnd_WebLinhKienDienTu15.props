@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FrontEnd_WebLinhKienDienTu15.props" />
+</Project>

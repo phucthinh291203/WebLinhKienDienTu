@@ -51,7 +51,7 @@ namespace WebLinhKienDienTu15.Controllers
         [HttpDelete("Deleta-By-Id")]
         public IActionResult DeleteById(int id)
         {
-            WebDienTuContext context = new WebDienTuContext();
+            WebDienTu15Context context = new WebDienTu15Context();
             var l = categorySvc.Read(id);
             if (l.Data != null)
             {

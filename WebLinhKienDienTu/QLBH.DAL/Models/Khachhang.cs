@@ -3,24 +3,24 @@ using System.Collections.Generic;
 
 namespace QLBH.DAL.Models
 {
-    public partial class Khachhang
+    public partial class KhachHang
     {
-        public Khachhang()
+        public KhachHang()
         {
-            DanhGia = new HashSet<DanhGium>();
-            Dondathangs = new HashSet<Dondathang>();
+            Carts = new HashSet<Cart>();
+            DonHangs = new HashSet<DonHang>();
+            PhieuBaoHanhs = new HashSet<PhieuBaoHanh>();
         }
 
-        public int MaKh { get; set; }
-        public string HoTen { get; set; } = null!;
-        public string? Taikhoan { get; set; }
-        public string Matkhau { get; set; } = null!;
-        public string? Email { get; set; }
-        public string? DiachiKh { get; set; }
-        public string? DienthoaiKh { get; set; }
-        public DateTime? Ngaysinh { get; set; }
+        public int Id { get; set; }
+        public string Ten { get; set; } = null!;
+        public string? Sdt { get; set; }
+        public string? DiaChi { get; set; }
+        public int? IdUser { get; set; }
 
-        public virtual ICollection<DanhGium> DanhGia { get; set; }
-        public virtual ICollection<Dondathang> Dondathangs { get; set; }
+        public virtual TaiKhoan? IdUserNavigation { get; set; }
+        public virtual ICollection<Cart> Carts { get; set; }
+        public virtual ICollection<DonHang> DonHangs { get; set; }
+        public virtual ICollection<PhieuBaoHanh> PhieuBaoHanhs { get; set; }
     }
 }

@@ -10,41 +10,41 @@ using QLBH.DAL.Models;
 
 namespace QLBH.DAL
 {
-    public class UserRep : GenericRep<WebDienTuContext, Khachhang>
+    public class UserRep : GenericRep<WebDienTu15Context, TaiKhoan>
     {
-        private WebDienTuContext _context = new WebDienTuContext();
+        private WebDienTu15Context _context = new WebDienTu15Context();
 
-        public override Khachhang Read(int id)
+        public override TaiKhoan Read(int id)
         {
-            var res = All.FirstOrDefault(u => u.MaKh == id);
+            var res = All.FirstOrDefault(u => u.Id == id);
             return res;
         }
         public int Remove(int id)
         {
-            var m = base.All.First(i => i.MaKh == id);
+            var m = base.All.First(i => i.Id == id);
             m = base.Delete(m);
-            return m.MaKh;
+            return m.Id;
         }
-        public Khachhang Read(string username)
+        public TaiKhoan Read(string username)
         {
-            var res = All.FirstOrDefault(u => u.Taikhoan == username);
+            var res = All.FirstOrDefault(u => u.UserName == username);
             return res;
         }
-        public Khachhang GetById(int id)
+        public TaiKhoan GetById(int id)
         {
-            return _context.Khachhangs.Find(id);
+            return _context.TaiKhoans.Find(id);
         }
-        public Khachhang GetByUserName(string username)
+        public TaiKhoan GetByUserName(string username)
         {
-            return _context.Khachhangs.FirstOrDefault(u => u.Taikhoan == username);
+            return _context.TaiKhoans.FirstOrDefault(u => u.UserName == username);
         }
 
-        public SingleRsp UpdateUser(Khachhang user)
+        public SingleRsp UpdateUser(TaiKhoan user)
         {
             var res = new SingleRsp();
             try
             {
-                _context.Khachhangs.Update(user);
+                _context.TaiKhoans.Update(user);
                 _context.SaveChanges();
                 res.Data = user;
             }
@@ -56,24 +56,24 @@ namespace QLBH.DAL
         }
         public void DeleteByUserName(string username)
         {
-            var user = _context.Khachhangs.FirstOrDefault(u => u.Taikhoan == username);
+            var user = _context.TaiKhoans.FirstOrDefault(u => u.UserName == username);
             if (user != null)
             {
-                _context.Khachhangs.Remove(user);
+                _context.TaiKhoans.Remove(user);
                 _context.SaveChanges();
             }
         }
 
-        public SingleRsp CreateUser(Khachhang user)
+        public SingleRsp CreateUser(TaiKhoan user)
         {
             var res = new SingleRsp();
-            using (var context = new WebDienTuContext())
+            using (var context = new WebDienTu15Context())
             {
                 using (var tran = context.Database.BeginTransaction())
                 {
                     try
                     {
-                        context.Khachhangs.Add(user);
+                        context.TaiKhoans.Add(user);
                         context.SaveChanges();
                         tran.Commit();
                     }
@@ -88,7 +88,7 @@ namespace QLBH.DAL
         }
         public bool ExistsUserName(string username, int id)
         {
-            return _context.Khachhangs.Any(u => u.Taikhoan == username && u.MaKh != id);
+            return _context.TaiKhoans.Any(u => u.UserName == username && u.Id != id);
         }
     }
 }

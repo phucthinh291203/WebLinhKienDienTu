@@ -8,13 +8,9 @@ namespace QLBH.common.Req
 {
     public class UserReq
     {
-        public int MaKh { get; set; }
-        public string HoTen { get; set; } = null!;
-        public string? Taikhoan { get; set; }
-        public string Matkhau { get; set; } = null!;
-        public string? Email { get; set; }
-        public string? DiachiKh { get; set; }
-        public string? DienthoaiKh { get; set; }
-        public DateTime? Ngaysinh { get; set; }
-    }
+		public string Ten { get; set; } = null!;
+		public string? UserName { get; set; }
+		public string? Pass { get; set; }
+		public int? IdRole { get; set; }
+	}
 }

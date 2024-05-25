@@ -3,25 +3,29 @@ using System.Collections.Generic;
 
 namespace QLBH.DAL.Models
 {
-    public partial class Sanpham
+    public partial class SanPham
     {
-        public Sanpham()
+        public SanPham()
         {
-            Chitietdonthangs = new HashSet<Chitietdonthang>();
-            DanhGia = new HashSet<DanhGium>();
+            CartItems = new HashSet<CartItem>();
+            Ctdhs = new HashSet<Ctdh>();
+            PhieuBaoHanhs = new HashSet<PhieuBaoHanh>();
         }
 
-        public int MaSp { get; set; }
-        public string TenSp { get; set; } = null!;
-        public decimal? Giaban { get; set; }
-        public string? AnhSp { get; set; }
-        public int? Soluongton { get; set; }
-        public int? MaLoai { get; set; }
-        public int? MaNcc { get; set; }
+        public int Id { get; set; }
+        public string Ten { get; set; } = null!;
+        public string? MoTa { get; set; }
+        public double? GiaBan { get; set; }
+        public double? GiaGiam { get; set; }
+        public int? SoLuongTon { get; set; }
+        public string? HinhAnh { get; set; }
+        public int? IdLsp { get; set; }
+        public int? IdNcc { get; set; }
 
-        public virtual LoaiSp? MaLoaiNavigation { get; set; }
-        public virtual Nhacungcap? MaNccNavigation { get; set; }
-        public virtual ICollection<Chitietdonthang> Chitietdonthangs { get; set; }
-        public virtual ICollection<DanhGium> DanhGia { get; set; }
+        public virtual LoaiSp? IdLspNavigation { get; set; }
+        public virtual Ncc? IdNccNavigation { get; set; }
+        public virtual ICollection<CartItem> CartItems { get; set; }
+        public virtual ICollection<Ctdh> Ctdhs { get; set; }
+        public virtual ICollection<PhieuBaoHanh> PhieuBaoHanhs { get; set; }
     }
 }

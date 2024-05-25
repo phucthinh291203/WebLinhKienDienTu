@@ -4,11 +4,16 @@ using QLBH.DAL.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<WebDienTuContext>(options =>
+builder.Services.AddDbContext<WebDienTu15Context>(options =>
     options.UseSqlServer(connectionString));
 // Add services to the container.
 
+
+builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
 builder.Services.AddControllers();
+// Configure UserSvc
 builder.Services.AddScoped<UserSvc>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

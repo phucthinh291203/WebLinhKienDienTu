@@ -7,12 +7,12 @@ namespace QLBH.DAL.Models
     {
         public LoaiSp()
         {
-            Sanphams = new HashSet<Sanpham>();
+            SanPhams = new HashSet<SanPham>();
         }
 
-        public int MaLoaiSp { get; set; }
-        public string TenLoaiSp { get; set; } = null!;
+        public int Id { get; set; }
+        public string Ten { get; set; } = null!;
 
-        public virtual ICollection<Sanpham> Sanphams { get; set; }
+        public virtual ICollection<SanPham> SanPhams { get; set; }
     }
 }
